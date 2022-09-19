@@ -1,11 +1,11 @@
-## Using Rain Sensor with Arduino
+## Using RFD Sensor with Arduino
 
-lf the weather is rainy, when the amount of water above the rain sensor exceeds a certain threshold, it will send a signal and the buzzer on the circuit will start to make sound. We prepared this circuit to give an alarm according to the signal received via the analog pin. The rain sensor consists of two electrodes. it informs us by measuring the conductivity between the electrodes. Water drops on the sensor increase the conductivity between the electrodes. The sensor sends this data as analog and digital outputs.
-You will read the data from the rain sensor in the code and ensure that it will sound alarm with the buzzer when it rains.
-
+In this application, the RFID card reader will read the 1D number of the card and sent it to Arduino via SPI (Serial Perhiperal lnterface) protocol. lf the 1D number is registered in the system, it activates the servo and opens the door. lf it is not registered, the door remains closed
+SPI is a serial communication protocol based on Master-Slave logic. That is, they need a clock signal to work synchronously with each other. in this way, communication is provided more reliably than asynchronous protocols such as UART. Far SPI, you will need at least 4 pins. SCK is used far the clock signal. MOSI (Master Out Slave in) is used to send data from the master device to the slave. MISO (Master in Slave Out) is used to send data from the slave device to the master. The SS (Slave Select) pin determines which device the master device communicates with. The RC522 RFID module used in this application alsO communicates via the SPI protocol.
 
 Let's set up the circuit and then start writing our project code.
 
 
+![image](https://user-images.githubusercontent.com/111511331/191033255-5903ede8-88e4-4722-a2a9-bca0ce01aecd.png)
 
-![image](https://user-images.githubusercontent.com/111511331/191016965-57f52f3a-f72a-44e6-bb3c-ba4ed7ede6d1.png)
+
