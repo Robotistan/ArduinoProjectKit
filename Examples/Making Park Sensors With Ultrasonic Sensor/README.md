@@ -1,10 +1,11 @@
-## Temperature Measurement with NTC
+## Making Park Sensors With Ultrasonic Sensor
 
-In this example, you will provide motor movement according to the value read by the sound sensor. The sound sensor provides a digital output by measuring the ambient sound level with a microphone. The sensor circuit amplifies the audio signal received from the microphone and converts the analog audio signal into a digital signal according to the threshold level.
-Since the motor draws excessive current, a motor driver board is used in such circuits. The motor drive powers the motor according to the signal it receives from the Arduino. This way you can safely control the motor without damaging Arduino.
+You will meet a new application model in this ultrasonic sensor application. The HC-SR04 ultrasonic sensor has metal parts that can send and detect sounds. After the sound is sent from the sensor, if it is reflected from any object or obstacle available and comes back to the sensor. The receiver can detect the reflected signal and make a measurement.
 
+The duration between the time when the sensor is sent and received is measured in order to calculate the distance. Since we know the speed of sound in the air, we can calculate the total distance by time and speed. 
 
 After setting up the circuit, let's continue with coding.
 
 
-![10](https://user-images.githubusercontent.com/111511331/190997546-c5d147e9-a23e-4bc1-a1d6-2c8af12cc259.png)
+
+![9](https://user-images.githubusercontent.com/111511331/190998541-02331fca-d327-4dd1-93eb-692562af8778.png)
