@@ -1,11 +1,11 @@
 ## Using Soil Moisture Sensor with Arduino
 
-The soil moisture sensor consists of two electrodes. it measures the conductivity between the electrodes and gives information about how moist the soil is. lf the soil is moist, the conductivity between the electrodes increases. Since the resistance decreases as the conductivity increases, less voltage starts to come from the voltage divider inside the sensor. lf the soil is dry, a higher voltage is obtained as the resistance between electrodes will increase, and this data is processed analogously to learn the amount of moisture in the soil.
-
-In this example, when the amount of moisture in the soil exceeds a certain threshold, it sends a signal and the buzzer on the circuit starts to make sound. in this circuit, we set the threshold value with the potentiometer on the sensor. Therefore, if the threshold exceeds the value set, it will give OV output from pin DO. Likewise, you can alsa prepare analogue data from pin AO in the range of OV-SV to operate when a certain threshold value is exceeded in the code.
+lf the weather is rainy, when the amount of water above the rain sensor exceeds a certain threshold, it will send a signal and the buzzer on the circuit will start to make sound. We prepared this circuit to give an alarm according to the signal received via the analog pin. The rain sensor consists of two electrodes. it informs us by measuring the conductivity between the electrodes. Water drops on the sensor increase the conductivity between the electrodes. The sensor sends this data as analog and digital outputs.
+You will read the data from the rain sensor in the code and ensure that it will sound alarm with the buzzer when it rains.
 
 
 Let's set up the circuit and then start writing our project code.
 
-![image](https://user-images.githubusercontent.com/111511331/191015224-b902acba-70c4-4f28-813b-57bd2646eb35.png)
+![
 
+![image](https://user-images.githubusercontent.com/111511331/191016965-57f52f3a-f72a-44e6-bb3c-ba4ed7ede6d1.png)
