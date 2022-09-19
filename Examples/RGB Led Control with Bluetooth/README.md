@@ -1,7 +1,9 @@
 ## Analog Reading and Serial Communication With Arduino Details
-In this application, we want to light up intermediate colors besides full brıghtness. We need to use PWM to turn the LED on to the desired brightness level. Since PWM feature is present in certain legs(3,5,6,9,10,11), we will pay attention to use these legs when making connections.
+
+In this example, you will receive the data sent via the Bluetooth module and check the color of the RGB LED.R GB is a term formed by combining the initials of Red, Green and Blue. RGB led is a component consisted of the combination of 3 LEDs of main colors. it allows the creation of color combinations by giving different voltages to the LEDs of different colors inside. There are two kinds of RGB LED types. These are the common anode and common cathode. The common anode RGB LED is made by combining the positive pins of the 3 LEDs inside. The common cathode RGB LED is made by combining the negative pins of the 3 LEDs inside. in this example, common anode RGB LED was used.
 
 Let's set up circuit and continue with coding.
 
-![6](https://user-images.githubusercontent.com/111511331/190963986-4b4f092f-7272-44cf-b2f8-44a81a2aeeea.png)
 
+
+![image](https://user-images.githubusercontent.com/111511331/191010083-6d2fc46c-7e68-4027-a97b-3f52ab34242d.png)
