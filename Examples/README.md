@@ -12,7 +12,7 @@
 ##### 10 - Motor Control with Sound.	
 ##### 11 - Servo Motor Control with Joystick	
 ##### 12 - LED Control with IR Controller.
-##### 13 - Making o Digital Meter with Arduino	
+##### 13 - Making a Digital Meter with Arduino	
 ##### 14 - Servo Motor Control with Motion Sensor (PIR)	
 ##### 15 - RGB LED Control with Bluetooth.	
 ##### 16 - Making Digital C/ocks with Arduino	
