@@ -1,14 +1,11 @@
 ## LED Lighting Details
-- What is the LED? 
 
-The LED is the abbreviation of light emitting diode. It is usually made of gallium arsenide, gallium phosphide semiconductor materials. The LED has two electrodes: a positive electrode and a negative one. It lights up only when a forward current passes, and it can flash red, blue, green, yellow, etc. The colour of the light depends on the material it is made. In general, the drive current for LED is 5-20mA. Therefore, in reality it usually needs an extra resistor for current limitation so as to protect the LED.
-![3](https://user-images.githubusercontent.com/112697142/190628322-3718612d-3587-445e-8675-dd0c900f1e33.PNG)
+The soil moisture sensor consists of two electrodes. it measures the conductivity between the electrodes and gives information about how moist the soil is. lf the soil is moist, the conductivity between the electrodes increases. Since the resistance decreases as the conductivity increases, less voltage starts to come from the voltage divider inside the sensor. lf the soil is dry, a higher voltage is obtained as the resistance between electrodes will increase, and this data is processed analogously to learn the amount of moisture in the soil.
 
-- What is resistor? 
-
-The main function of the resistor is to limit currents. In the circuit, the character ‘R’ represents resistor, and the unit of resistor is ohm(Ω). A band resistor is used in this experiment. It is a resistor with a surface coated with some particular colour through which the resistance can be identified directly.
+In this example, when the amount of moisture in the soil exceeds a certain threshold, it sends a signal and the buzzer on the circuit starts to make sound. in this circuit, we set the threshold value with the potentiometer on the sensor. Therefore, if the threshold exceeds the value set, it will give OV output from pin DO. Likewise, you can alsa prepare analogue data from pin AO in the range of OV-SV to operate when a certain threshold value is exceeded in the code.
 
 
 Let's set up the circuit and then start writing our project code.
 
-![2](https://user-images.githubusercontent.com/112697142/190629949-a3e8bbce-56eb-49b7-baa8-825695bd6829.PNG)
+![image](https://user-images.githubusercontent.com/111511331/191015224-b902acba-70c4-4f28-813b-57bd2646eb35.png)
+
