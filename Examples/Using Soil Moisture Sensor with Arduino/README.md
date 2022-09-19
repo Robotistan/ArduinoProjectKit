@@ -1,4 +1,4 @@
-## LED Lighting Details
+## Using Soil Moisture Sensor with Arduino
 
 The soil moisture sensor consists of two electrodes. it measures the conductivity between the electrodes and gives information about how moist the soil is. lf the soil is moist, the conductivity between the electrodes increases. Since the resistance decreases as the conductivity increases, less voltage starts to come from the voltage divider inside the sensor. lf the soil is dry, a higher voltage is obtained as the resistance between electrodes will increase, and this data is processed analogously to learn the amount of moisture in the soil.
 
