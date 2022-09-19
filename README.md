@@ -48,9 +48,9 @@ Now you will be able to make electronic projects that will impress yourself and 
 ##### To purchase, please click [here](https://shop.robotistan.com/products/electronic-super-starter-kit-suitable-for-maker-projects-and-electronics-compatible-with-arduino-super-starter-pack-for-beginners "Heading Link").
 
 ## Repository Contents
-- ##### [Examples]( "Heading link") 
-- ##### [Book]( "Heading link")
-- ##### [Documents]( "Heading link")
+- ##### [Examples](https://github.com/Robotistan/ArduinoProjectKit/tree/main/Examples "Heading link") 
+- ##### [Book](https://github.com/Robotistan/ArduinoProjectKit/tree/main/Book "Heading link")
+- ##### [Documents](https://github.com/Robotistan/ArduinoProjectKit/tree/main/Documents "Heading link")
 
 ## Note
 If you have any questions, please contact technical support on our [Robotistan Community](https://community.robotistan.com/).
