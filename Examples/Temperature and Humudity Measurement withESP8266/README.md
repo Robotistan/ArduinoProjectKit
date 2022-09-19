@@ -1,11 +1,15 @@
-## Using Soil Moisture Sensor with Arduino
+## Temperature and Humudity Measurement with ESP8266
 
-The soil moisture sensor consists of two electrodes. it measures the conductivity between the electrodes and gives information about how moist the soil is. lf the soil is moist, the conductivity between the electrodes increases. Since the resistance decreases as the conductivity increases, less voltage starts to come from the voltage divider inside the sensor. lf the soil is dry, a higher voltage is obtained as the resistance between electrodes will increase, and this data is processed analogously to learn the amount of moisture in the soil.
+In this application, you will send the temperature and humidity data received via DHT11 to Thingspeak platform using ESP8266 WiFi module.
+The UART protocol is used when communicating with ESP8266. In this example, we will use the 115200 Baud rate (Communication speed).
+Thingspeak is an open source loT (lnternet of Things) application. Users send data to the site via HTTP and make their own applications visually better and easy to understand thanks to the graphical interfaces on the site. In this example, time-humidity and time-temperature graphs will be generated in Thingspeak with data from the DHT11 sensor.
 
-In this example, when the amount of moisture in the soil exceeds a certain threshold, it sends a signal and the buzzer on the circuit starts to make sound. in this circuit, we set the threshold value with the potentiometer on the sensor. Therefore, if the threshold exceeds the value set, it will give OV output from pin DO. Likewise, you can alsa prepare analogue data from pin AO in the range of OV-SV to operate when a certain threshold value is exceeded in the code.
+ESP8266, thanks to the wireless communication circuit on the ethernet protocol, allows us to connect to the wireless Internet. Devices such as Arduino do not have any hardware that allows them to use the ethernet protocol. Therefore, modules are utilized to use the ethernet protocol. These modules convert the ethernet protocol into communication protocols that provide easier communication. ESP8266 is an example of these modules. It acts as an interpreter, which simplifies and converts the Ethernet protocol into a UART protocol.
+
+The DHT11 is a sensor far reading humidity and temperature data. As with the sensors used before, this sensor allows us to measure the humidity and temperature of the air by measuring the conductivity. There is an NTC (Negative Temperature Coefient) inside the sensor. NTC is a kind of resistor, and as the ambient temperature increases, its conductivity increases and the resistance value decreases. There are 2 electrodes inside the sensor and a surface that holds the moisture in the air between the electrodes. This surface changes the conductivity between the electrodes as the amount of moisture in the air increases. In this way, the humidity level in the air can be measured.
 
 
 Let's set up the circuit and then start writing our project code.
 
-![image](https://user-images.githubusercontent.com/111511331/191015224-b902acba-70c4-4f28-813b-57bd2646eb35.png)
+![image](https://user-images.githubusercontent.com/111511331/191035466-8e98790a-7889-4d12-a18a-6431eda6597c.png)
 
