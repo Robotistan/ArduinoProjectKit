@@ -1,4 +1,4 @@
-## Analog Reading and Serial Communication With Arduino Details
+## Making a Digital Clock with Arduino
 
 When you try to make a clock on devices like Arduino, the biggest problem you will face is that in case ofa power failure, Arduino stops counting the time. This causes deviations in time and prevents you from learning the right time. RTC modules are built to keep time synchronous. This module, which can operate even with very little power, counts with the crystal on it without deviation in time far many years thanks to its battery. This crystal produces 32000 signals per second. The RTC reads these signals and counts one second forward in every 32000 steps.
 
