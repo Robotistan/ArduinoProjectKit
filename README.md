@@ -1,5 +1,6 @@
 # Electronic Project Kit - Suitable for Maker Projects and Electronics - Compatible with Arduino - All in One Pack
-<img src="https://user-images.githubusercontent.com/111511331/190958350-42f6b469-a34f-4a16-a0ed-feb0d41d5e87.png" width="500" height="500">
+<img src="https://user-images.githubusercontent.com/111511331/191202835-8d602a61-68b4-4c0b-b2eb-4f5ca0d22619.jpg" width="500" height="500">
+
 
 
 
