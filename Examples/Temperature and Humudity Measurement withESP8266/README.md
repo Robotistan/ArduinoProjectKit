@@ -1,8 +1,10 @@
 ## Step Motor Control with ESP8266
 
-in this application, you will control the step motor via the WEB Server opened using ESP8266. Step motors are electromechanically devices that convert electrical energy into physical energy with rotary motion. As the name suggests, these motors run step by step. They continue their movement by opening and closing of the coils in order. in this example, the step motor used was 4-phase with 4 coils inside. Step motors are controlled by very high-speed switching motor drives and motor control boards. The step motor driver we used drives the motor according to the signals it receives from Arduino.
+In this application, you will send the temperature and humidity data received via DHT11 to Thingspeak platform using ESP8266 WiFi module.
+The UART protocol is used when communicating with ESP8266. in this example, we will use the 115200 Baud rate (Communication speed).
+Thingspeak is an open source loT (lnternet of Things) application. Users send data to the site via HTTP and make their own applications visually better and easy to understand thanks to the graphical interfaces on the site. In this example, time-humidity and time-temperature graphs will be generated in Thingspeak with data from the DHT11 sensor.
 
 Let's set up the circuit and then start writing our project code.
 
 
-![image](https://user-images.githubusercontent.com/111511331/191037663-c39d061d-bde7-41c5-b9fc-fb09dbac7e24.png)
+![image](https://user-images.githubusercontent.com/111511331/191267702-2cb30877-8ae8-45cd-b627-54b6807e7cf6.png)
