@@ -44,7 +44,7 @@ Now you will be able to make electronic projects that will impress yourself and 
 - [HC06 Bluetooth Module](https://shop.robotistan.com/products/hc06-serial-port-bluetooth-module?_pos=1&_sid=4454e2bc5&_ss=r "Heading Link")
 
 
-##### To purchase, please click [here](https://shop.robotistan.com/products/electronic-super-starter-kit-suitable-for-maker-projects-and-electronics-compatible-with-arduino-super-starter-pack-for-beginners "Heading Link").
+##### To purchase, please click [here](https://shop.robotistan.com/products/arduino-project-kit "Heading Link").
 
 ## Repository Contents
 - ##### [Examples](https://github.com/Robotistan/ArduinoProjectKit/tree/main/Examples "Heading link") 
