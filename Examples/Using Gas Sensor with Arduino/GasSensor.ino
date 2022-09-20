@@ -1,20 +1,20 @@
-int threshold_value = 400;               //Gaz eşik değerini belirliyoruz.    
-int buzzerPin = 9;                  //Buzzerın takılacağı pin
-int deger;                          //Sensörden okunan değer
+int threshold_value = 400;               //Determining the threshold value of Gas    
+int buzzerPin = 9;                       //The buzzer pin on 9
+int value;                               //Reads value from the buzzer
 
 void setup() {
-  pinMode(buzzerPin, OUTPUT);       //Buzzer pinimizi çıkış olarak ayarlıyoruz.
+  pinMode(buzzerPin, OUTPUT);            //Sets the buzzer pin as output
 }
 
 void loop() {
-  deger = analogRead(A0);           //Sensörden analog değer okuyoruz.
-  if(deger > threshold_value){           //Sensörden okunan değer eşik değerinden büyükse çalışır.
+  value = analogRead(A0);                //Reads the analog value from sensor
+  if(value > threshold_value){           //If the read value from sensor is bigger than the threshold value, it runs.
     digitalWrite(buzzerPin, HIGH);
     delay(100);
     digitalWrite(buzzerPin, LOW);
     delay(100);
   }
-  else{                             //Sensörden okunan değer eşik değerinin altındaysa çalışır.
+  else{                                  //If the read value from sensor is smaller than the threshold value it runs. 
     digitalWrite(buzzerPin, LOW);
   }
 }

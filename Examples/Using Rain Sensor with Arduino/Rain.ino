@@ -1,20 +1,20 @@
-int sensorPin = A0;                //Sensörü bağlayacağımız pin
-int threshold_value = 100;              //Su miktarı için eşik değeri
-int buzzerPin = 8;                 //Buzzerı bağlayacağımız pin
-int veri;                          //Sensörden okuduğumuz değer
+int sensorPin = A0;                // Sensor Pin is on A0
+int threshold_value = 100;         // Threshold value for amount of water
+int buzzerPin = 8;                 // Buzzer Pin is on 8
+int data;                          // The value that reads from the sensor
 
 void setup() {
-  pinMode(buzzerPin, OUTPUT);      //Buzzer bağladığımız pini OUTPUT olarak ayarlıyoruz.  
+  pinMode(buzzerPin, OUTPUT);      // Sets the buzzerPin(pin 8) as output  
 }
 void loop() {
-  veri = analogRead(sensorPin);    //Sensörden analog veriyi okuyoruz.
-  if(veri > threshold_value){           //Sensör verisi eşik değerini geçerse if içerisindeki kodlar uygulanır.
-    digitalWrite(buzzerPin, HIGH); 
-    delay(100);
-    digitalWrite(buzzerPin, LOW);
-    delay(100);
+  data = analogRead(sensorPin);    // Reads analog data from the sensor
+  if(data > threshold_value){      // If the data is more than the threshold value 
+    digitalWrite(buzzerPin, HIGH); // Sets the buzzerPin's state as HIGH
+    delay(100);                    // Delay for 100 micro seconds
+    digitalWrite(buzzerPin, LOW);  // Sets the buzzerPin's state as LOW
+    delay(100);                    // Delay for 100 micro seconds
   }
-  else{                            //Sensör verisi eşik değerinden küçük olursa if içerisindeki kodlar uygulanır.
-    digitalWrite(buzzerPin, LOW);
+  else{                            // If the data is less than the threshold value
+    digitalWrite(buzzerPin, LOW);  // Sets the buzzerPin's state as LOW
   }
 }

@@ -1,18 +1,18 @@
-#include <virtuabotixRTC.h>                            //Kütüphanemizi ekliyoruz.
-int CLK_PIN = 6;                                       //6. pini clock pini olarak tanımladık
-int DAT_PIN = 7;                                       //7. pini data pini olarak tanımladık
-int RST_PIN = 8;                                       //8. pini reset pini olarak tanımladık.
-virtuabotixRTC myRTC(CLK_PIN, DAT_PIN, RST_PIN);      // Kütüphanemizi pinlere atıyoruz.
+#include <virtuabotixRTC.h>                           // Add The Library
+int CLK_PIN = 6;                                      // 6th pin is defined as clock pin
+int DAT_PIN = 7;                                      // 7th pin is defined as data pin
+int RST_PIN = 8;                                      // 8th pin is defined as reset pin
+virtuabotixRTC myRTC(CLK_PIN, DAT_PIN, RST_PIN);      // The library is assign to pins
 
 void setup() {
- Serial.begin(9600);                                   //Seri haberleşmeyi başlatıyoruz.
- myRTC.setDS1302Time(10, 10, 14, 4, 13, 9, 2018);     //Saati saniye, dakika, saat, haftanın günü, ayın günü, ay, yıl olarak ayarlıyoruz.
+ Serial.begin(9600);                                  // Begining Seriel Communication
+ myRTC.setDS1302Time(10, 10, 14, 4, 13, 9, 2018);     // Setting clock options
 }
 
 void loop() {
- myRTC.updateTime();                                   //RTC'den zamanı okuyoruz
+ myRTC.updateTime();                                   // Reading the time from RTC
 
- Serial.print("Tarih / Saat: ");                       //Aldığımız verileri Serial Porta bastırıyoruz.
+ Serial.print("Tarih / Saat: ");                       // Display the datas on serial port.S
  Serial.print(myRTC.dayofmonth);
  Serial.print("/");
  Serial.print(myRTC.month);
@@ -25,5 +25,5 @@ void loop() {
  Serial.print(":");
  Serial.println(myRTC.seconds);
 
- delay(1000);                                          //1sn bekleme.
+ delay(1000);                                          // Delay one second
 }
