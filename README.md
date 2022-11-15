@@ -5,7 +5,7 @@
 
 
 ## [Arduino Project Kit](https://shop.robotistan.com/products/arduino-project-kit "Heading link")
-Learning Electronic Projects based on Arduino! Super Starter Kit will allow you to learn electronic programming by doing enjoyable projects. With the applications in the Arduino Compatible book which comes with the kit, will help you to carry your basic electronics knowledge to an advanced level seamlesly.
+Learning Electronic Projects based on Arduino! Project Kit will allow you to learn electronic programming by doing enjoyable projects. With the applications in the Arduino Compatible book which comes with the kit, will help you to carry your basic electronics knowledge to an advanced level seamlesly.
 
 
 ## Project Examples
