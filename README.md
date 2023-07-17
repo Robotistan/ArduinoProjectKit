@@ -1,7 +1,9 @@
 # Electronic Project Kit - Suitable for Maker Projects and Electronics - Compatible with Arduino - All in One Pack
 
+<p align="center">
+  <img src="https://github.com/Robotistan/ArduinoProjectKit/assets/112697142/16a26d81-fabf-4f8e-9c76-e7b87b874e9a" alt="animated" />
+</p>
 
-![191202835-8d602a61-68b4-4c0b-b2eb-4f5ca0d22619](https://user-images.githubusercontent.com/112697142/193270456-2949d21a-2fff-4e7f-b9e9-cd42d5100a71.jpg)
 
 
 ## [Arduino Project Kit](https://shop.robotistan.com/products/arduino-project-kit "Heading link")
